@@ -18,6 +18,10 @@ ExternalProject_Add(rxcpp-6c283f36
   INSTALL_COMMAND ""
 )
 
+# bit hackish: add the externalproject target to the exported targets,
+# so consumers of the headers get build-ordered correctly.
+list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS rxcpp-6c283f36)
+
 catkin_package(CFG_EXTRAS rxcpp_vendor-extras.cmake)
 
 install(
