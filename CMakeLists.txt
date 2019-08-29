@@ -26,5 +26,5 @@ catkin_package(CFG_EXTRAS rxcpp_vendor-extras.cmake)
 
 install(
   DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/rxcpp_src/Rx/v2/src/rxcpp
-  DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}/include
+  DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
 )
